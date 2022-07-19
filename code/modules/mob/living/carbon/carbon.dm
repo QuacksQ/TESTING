@@ -435,8 +435,6 @@
 	else
 		if(message)
 			visible_message(span_danger("[src] throws up!"), span_userdanger("You throw up!"))
-			if(!isflyperson(src))
-				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "vomit", /datum/mood_event/vomit)
 
 	if(stun)
 		Paralyze(80)

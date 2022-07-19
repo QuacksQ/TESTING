@@ -57,7 +57,6 @@
 		/obj/item/organ/internal/tongue/robot,
 		/obj/item/organ/internal/tongue/zombie,
 		/obj/item/organ/internal/appendix,
-		/obj/item/organ/internal/liver/fly,
 		/obj/item/organ/internal/lungs/plasmaman,
 		/obj/item/organ/external/tail/cat,
 		/obj/item/organ/external/tail/lizard,

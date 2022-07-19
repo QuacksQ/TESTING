@@ -70,7 +70,7 @@
 	if(visualsOnly)
 		regular_uniform = TRUE //assume human
 	else
-		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26, /datum/species/fly = 2, /datum/species/plasmaman = 2))
+		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26, /datum/species/moth = 2, /datum/species/plasmaman = 2))
 		if(new_species_type != /datum/species/plasmaman)
 			regular_uniform = TRUE
 		else

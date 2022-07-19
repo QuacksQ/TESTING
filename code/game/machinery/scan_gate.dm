@@ -9,7 +9,6 @@
 #define SCANGATE_HUMAN "human"
 #define SCANGATE_LIZARD "lizard"
 #define SCANGATE_FELINID "felinid"
-#define SCANGATE_FLY "fly"
 #define SCANGATE_PLASMAMAN "plasma"
 #define SCANGATE_MOTH "moth"
 #define SCANGATE_JELLY "jelly"
@@ -141,8 +140,6 @@
 				switch(detect_species)
 					if(SCANGATE_LIZARD)
 						scan_species = /datum/species/lizard
-					if(SCANGATE_FLY)
-						scan_species = /datum/species/fly
 					if(SCANGATE_FELINID)
 						scan_species = /datum/species/human/felinid
 					if(SCANGATE_PLASMAMAN)
@@ -274,7 +271,6 @@
 #undef SCANGATE_HUMAN
 #undef SCANGATE_LIZARD
 #undef SCANGATE_FELINID
-#undef SCANGATE_FLY
 #undef SCANGATE_PLASMAMAN
 #undef SCANGATE_MOTH
 #undef SCANGATE_JELLY

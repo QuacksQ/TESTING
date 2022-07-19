@@ -11,6 +11,6 @@
 /obj/item/organ/internal/heart/gland/transform/activate()
 	to_chat(owner, span_notice("You feel unlike yourself."))
 	randomize_human(owner)
-	var/species = pick(list(/datum/species/human, /datum/species/lizard, /datum/species/moth, /datum/species/fly))
+	var/species = pick(list(/datum/species/human, /datum/species/lizard, /datum/species/moth))
 	owner.set_species(species)
 	owner.dna.update_dna_identity()

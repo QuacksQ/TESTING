@@ -1020,9 +1020,6 @@
 /mob/living/carbon/human/species/felinid
 	race = /datum/species/human/felinid
 
-/mob/living/carbon/human/species/fly
-	race = /datum/species/fly
-
 /mob/living/carbon/human/species/golem
 	race = /datum/species/golem
 
