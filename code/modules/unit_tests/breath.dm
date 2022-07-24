@@ -36,7 +36,7 @@
 /datum/unit_test/breath_sanity_plasmamen
 
 /datum/unit_test/breath_sanity_plasmamen/Run()
-	var/mob/living/carbon/human/species/plasma/lab_rat = allocate(/mob/living/carbon/human/species/plasma)
+	var/mob/living/carbon/human/lab_rat = allocate(/mob/living/carbon/human)
 	var/obj/item/clothing/mask/breath/tube = allocate(/obj/item/clothing/mask/breath)
 	var/obj/item/tank/internals/plasmaman/source = allocate(/obj/item/tank/internals/plasmaman)
 

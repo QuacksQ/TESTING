@@ -115,8 +115,6 @@
 /datum/reagent/gunpowder/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	. = TRUE
 	..()
-	if(!isplasmaman(M))
-		return
 	M.set_timed_status_effect(30 SECONDS * REM * delta_time, /datum/status_effect/drugginess)
 	if(M.hallucination < volume)
 		M.hallucination += 5 * REM * delta_time

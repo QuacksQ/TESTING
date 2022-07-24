@@ -230,12 +230,6 @@
 	var/mob/living/carbon/human/H = owner.current
 	if(!istype(H))
 		return
-	if(isplasmaman(H))
-		H.equipOutfit(plasmaman_outfit)
-		H.internal = H.get_item_for_held_index(2)
-		H.update_internals_hud_icon(1)
-	H.equipOutfit(outfit)
-
 
 /datum/antagonist/ert/greet()
 	if(!ert_team)

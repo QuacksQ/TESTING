@@ -352,8 +352,6 @@
 	new_tongue.organ_flags |= ORGAN_UNREMOVABLE
 
 	var/obj/item/clothing/gloves/gloves_type = /obj/item/clothing/gloves/radio
-	if(isplasmaman(human_holder))
-		gloves_type = /obj/item/clothing/gloves/color/plasmaman/radio
 	give_item_to_holder(gloves_type, list(LOCATION_GLOVES = ITEM_SLOT_GLOVES, LOCATION_BACKPACK = ITEM_SLOT_BACKPACK, LOCATION_HANDS = ITEM_SLOT_HANDS))
 
 /datum/quirk/item_quirk/tongue_tied/post_add()
