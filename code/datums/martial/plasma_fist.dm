@@ -91,7 +91,7 @@
 	user.say("APOTHEOSIS!!", forced="plasma fist")
 	if (ishuman(user))
 		var/mob/living/carbon/human/human_attacker = user
-		human_attacker.set_species(/datum/species/plasmaman)
+		human_attacker.set_species(/datum/species/human)
 		ADD_TRAIT(human_attacker, TRAIT_FORCED_STANDING, type)
 		human_attacker.dna.species.species_traits += TRAIT_BOMBIMMUNE
 		human_attacker.unequip_everything()

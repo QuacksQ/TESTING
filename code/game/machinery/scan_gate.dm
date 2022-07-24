@@ -142,8 +142,6 @@
 						scan_species = /datum/species/lizard
 					if(SCANGATE_FELINID)
 						scan_species = /datum/species/human/felinid
-					if(SCANGATE_PLASMAMAN)
-						scan_species = /datum/species/plasmaman
 					if(SCANGATE_MOTH)
 						scan_species = /datum/species/moth
 					if(SCANGATE_JELLY)

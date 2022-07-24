@@ -70,13 +70,7 @@
 	if(visualsOnly)
 		regular_uniform = TRUE //assume human
 	else
-		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26, /datum/species/moth = 2, /datum/species/plasmaman = 2))
-		if(new_species_type != /datum/species/plasmaman)
-			regular_uniform = TRUE
-		else
-			uniform = /obj/item/clothing/under/plasmaman
-			head = /obj/item/clothing/head/helmet/space/plasmaman
-			belt = /obj/item/tank/internals/plasmaman/belt
+		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26, /datum/species/moth = 2))
 		if(new_species_type == /datum/species/lizard)
 			shoes = null //digitigrade says no
 	if(regular_uniform)
