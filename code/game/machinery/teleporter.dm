@@ -80,9 +80,7 @@
 				if(ishuman(M))//don't remove people from the round randomly you jerks
 					var/mob/living/carbon/human/human = M
 					if(!(human.mob_biotypes & (MOB_ROBOTIC|MOB_MINERAL|MOB_UNDEAD|MOB_SPIRIT)))
-						var/datum/species/species_to_transform = /datum/species/moth
-						if(SSevents.holidays && SSevents.holidays[MOTH_WEEK])
-							species_to_transform = /datum/species/moth
+						var/datum/species/species_to_transform = /datum/species/human
 						if(human.dna && human.dna.species.id != initial(species_to_transform.id))
 							to_chat(M, span_hear("You hear a buzzing in your ears."))
 							human.set_species(species_to_transform)

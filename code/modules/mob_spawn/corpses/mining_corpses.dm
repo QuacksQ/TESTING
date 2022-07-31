@@ -70,7 +70,7 @@
 	if(visualsOnly)
 		regular_uniform = TRUE //assume human
 	else
-		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26, /datum/species/moth = 2))
+		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26))
 		if(new_species_type == /datum/species/lizard)
 			shoes = null //digitigrade says no
 	if(regular_uniform)
