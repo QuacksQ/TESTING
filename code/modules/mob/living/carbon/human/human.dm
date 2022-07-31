@@ -1116,9 +1116,6 @@
 /mob/living/carbon/human/species/lizard/silverscale
 	race = /datum/species/lizard/silverscale
 
-/mob/living/carbon/human/species/ethereal
-	race = /datum/species/ethereal
-
 /mob/living/carbon/human/species/mush
 	race = /datum/species/mush
 
