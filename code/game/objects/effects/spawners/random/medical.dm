@@ -46,10 +46,8 @@
 	loot = list(
 		/obj/item/organ/internal/ears/penguin,
 		/obj/item/organ/internal/ears/cat,
-		/obj/item/organ/internal/eyes/moth,
 		/obj/item/organ/internal/eyes/snail,
 		/obj/item/organ/internal/tongue/bone,
-		/obj/item/organ/internal/tongue/fly,
 		/obj/item/organ/internal/tongue/snail,
 		/obj/item/organ/internal/tongue/lizard,
 		/obj/item/organ/internal/tongue/alien,
