@@ -70,9 +70,7 @@
 	if(visualsOnly)
 		regular_uniform = TRUE //assume human
 	else
-		var/new_species_type = pick_weight(list(/datum/species/human = 70, /datum/species/lizard = 26))
-		if(new_species_type == /datum/species/lizard)
-			shoes = null //digitigrade says no
+		var/new_species_type = pick_weight(list(/datum/species/human = 70))
 	if(regular_uniform)
 		uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 		if(prob(4))
@@ -89,27 +87,6 @@
 	if(prob(10))
 		l_pocket = pick_weight(list(/obj/item/stack/spacecash/c1000 = 7, /obj/item/reagent_containers/hypospray/medipen/survival = 2, /obj/item/borg/upgrade/modkit/cooldown = 1 ))
 
-/datum/outfit/consumed_ashwalker
-	name = "Legion-Consumed Ashwalker"
-	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker
-
-/datum/outfit/consumed_ashwalker/pre_equip(mob/living/carbon/human/ashwalker, visualsOnly = FALSE)
-	if(!visualsOnly)
-		ashwalker.set_species(/datum/species/lizard/ashwalker)
-	if(prob(95))
-		head = /obj/item/clothing/head/helmet/gladiator
-	else
-		head = /obj/item/clothing/head/helmet/skull
-		suit = /obj/item/clothing/suit/armor/bone
-		gloves = /obj/item/clothing/gloves/bracer
-	if(prob(5))
-		back = pick_weight(list(/obj/item/spear/bonespear = 3, /obj/item/fireaxe/boneaxe = 2))
-	if(prob(10))
-		belt = /obj/item/storage/belt/mining/primitive
-	if(prob(30))
-		r_pocket = /obj/item/knife/combat/bone
-	if(prob(30))
-		l_pocket = /obj/item/knife/combat/bone
 
 //takes a lot from the clown job, notably NO PDA and different backpack loot + pocket goodies
 /datum/outfit/consumed_clown

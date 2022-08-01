@@ -138,8 +138,6 @@
 				var/mob/living/carbon/human/H = M
 				var/datum/species/scan_species = /datum/species/human
 				switch(detect_species)
-					if(SCANGATE_LIZARD)
-						scan_species = /datum/species/lizard
 					if(SCANGATE_FELINID)
 						scan_species = /datum/species/human/felinid
 					if(SCANGATE_JELLY)

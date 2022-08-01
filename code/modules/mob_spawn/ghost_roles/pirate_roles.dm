@@ -66,7 +66,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	prompt_name = "a silverscale"
-	mob_species = /datum/species/lizard/silverscale
+	mob_species = /datum/species/human
 	outfit = /datum/outfit/pirate/silverscale
 	rank = "High-born"
 

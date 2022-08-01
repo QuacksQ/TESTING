@@ -195,7 +195,7 @@
 		return ..()
 	var/mob/living/carbon/human/yolk = new /mob/living/carbon/human/(get_turf(src))
 	yolk.fully_replace_character_name(null,random_unique_lizard_name(gender))
-	yolk.set_species(/datum/species/lizard/ashwalker)
+	yolk.set_species(/datum/species/human)
 	yolk.underwear = "Nude"
 	yolk.equipOutfit(/datum/outfit/ashwalker)//this is an authentic mess we're making
 	yolk.update_body()
@@ -209,7 +209,7 @@
 	prompt_name = "necropolis ash walker"
 	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
 	icon_state = "large_egg"
-	mob_species = /datum/species/lizard/ashwalker
+	mob_species = /datum/species/human
 	outfit = /datum/outfit/ashwalker
 	move_resist = MOVE_FORCE_NORMAL
 	density = FALSE

@@ -470,10 +470,8 @@ GLOBAL_LIST_INIT(phobia_species, list(
 	)),
 	"anime" = typecacheof(list(/datum/species/human/felinid)),
 	"conspiracies" = typecacheof(list(
-		/datum/species/abductor,
-		/datum/species/lizard,
+		/datum/species/abductor
 	)),
-	"lizards" = typecacheof(list(/datum/species/lizard)),
 	"robots" = typecacheof(list(/datum/species/android)),
 	"skeletons" = typecacheof(list(
 		/datum/species/skeleton,
