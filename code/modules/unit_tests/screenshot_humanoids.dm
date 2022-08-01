@@ -5,7 +5,7 @@
 	// Test humans as their own thing so we can get more coverage on their features
 	var/mob/living/carbon/human = allocate(/mob/living/carbon/human/dummy/consistent)
 	human.set_species(/datum/species/human)
-	human.equipOutfit(/datum/outfit/job/engineer)
+	human.equip_to_slot_if_possible(/datum/outfit/job/engineer)
 	test_screenshot("[/datum/species/human]", get_flat_icon_for_all_directions(human))
 
 	// The rest of the species
