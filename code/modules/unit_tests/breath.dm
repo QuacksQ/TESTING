@@ -57,7 +57,7 @@
 /datum/unit_test/breath_sanity_ashwalker
 
 /datum/unit_test/breath_sanity_ashwalker/Run()
-	var/mob/living/carbon/human/species/lizard/ashwalker/lab_rat = allocate(/mob/living/carbon/human/species/lizard/ashwalker)
+	var/mob/living/carbon/human/lab_rat = allocate(/mob/living/carbon/human)
 
 	//Prep the mob
 	lab_rat.forceMove(run_loc_floor_bottom_left)

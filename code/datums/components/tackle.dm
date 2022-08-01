@@ -287,13 +287,6 @@
 		if(T.is_holding_item_of_type(/obj/item/shield))
 			defense_mod += 2
 
-		if(islizard(T))
-			var/obj/item/organ/external/tail/el_tail = T.getorganslot(ORGAN_SLOT_EXTERNAL_TAIL)
-			if(!el_tail) // lizards without tails are off-balance
-				defense_mod -= 1
-			else if(el_tail.wag_flags & WAG_WAGGING) // lizard tail wagging is robust and can swat away assailants!
-				defense_mod += 1
-
 	// OF-FENSE
 	var/mob/living/carbon/sacker = parent
 	var/sacker_drunkenness = sacker.get_drunk_amount()

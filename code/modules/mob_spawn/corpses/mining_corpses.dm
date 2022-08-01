@@ -68,7 +68,7 @@
 	if(visualsOnly)
 		regular_uniform = TRUE //assume human
 	else
-		var/new_species_type = pick_weight(list(/datum/species/human = 70))
+		var/new_species_type = pick_weight(list(/datum/species/human = 100))
 	if(regular_uniform)
 		uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 		if(prob(4))

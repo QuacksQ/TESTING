@@ -2646,9 +2646,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 /datum/reagent/consumable/ethanol/protein_blend/on_mob_life(mob/living/carbon/drinker, delta_time, times_fired)
 	drinker.adjust_nutrition(2 * REM * delta_time)
-	if(!islizard(drinker))
-		drinker.adjust_disgust(5 * REM * delta_time)
-	else
+	if(!ishuman(drinker))
 		drinker.adjust_disgust(2 * REM * delta_time)
 	..()
 
@@ -2675,11 +2673,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_name = "Triumphal Arch"
 	glass_desc = "A toast to the Empire, long may it stand."
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
-
-/datum/reagent/consumable/ethanol/triumphal_arch/on_mob_life(mob/living/carbon/drinker, delta_time, times_fired)
-	if(islizard(drinker))
-		SEND_SIGNAL(drinker, COMSIG_ADD_MOOD_EVENT, "triumph", /datum/mood_event/memories_of_home, name)
-	..()
 
 /datum/reagent/consumable/ethanol/the_juice
 	name = "The Juice"

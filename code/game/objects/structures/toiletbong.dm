@@ -46,11 +46,7 @@
 			puff.set_up(smokeradius, holder = src, location = user, carry = item.reagents, efficiency = 20)
 			puff.start()
 			if (prob(5) && !emagged)
-				if(islizard(user))
-					to_chat(user, span_boldnotice("A hidden treat in the pipes!"))
-					user.balloon_alert(user, "A hidden treat in the pipes!")
-					user.visible_message(span_danger("[user] fishes a mouse out of the pipes."))
-				else
+				if(ishuman(user))
 					to_chat(user, span_userdanger("There was something disgusting in the pipes!"))
 					user.visible_message(span_danger("[user] spits out a mouse."))
 					user.adjust_disgust(50)
