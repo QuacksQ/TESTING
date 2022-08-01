@@ -1185,12 +1185,6 @@
 	glass_desc = "Oddly savoury for a drink."
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/consumable/mushroom_tea/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
-	if(islizard(M))
-		M.adjustOxyLoss(-0.5 * REM * delta_time, 0)
-	..()
-	. = TRUE
-
 //Moth Stuff
 /datum/reagent/consumable/toechtauese_juice
 	name = "Töchtaüse Juice"
