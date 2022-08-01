@@ -43,8 +43,6 @@
 	switch(corpse_theme)
 		if("Miner")
 			outfit = /datum/outfit/consumed_miner
-		if("Ashwalker")
-			outfit = /datum/outfit/consumed_ashwalker
 		if("Clown")
 			outfit = /datum/outfit/consumed_clown
 		if("Golem")
