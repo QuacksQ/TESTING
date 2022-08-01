@@ -64,7 +64,7 @@
 
 	var/turf/open/to_fill = run_loc_floor_bottom_left
 	//Prep the floor
-	to_fill.initial_gas_mix = LAVALAND_DEFAULT_ATMOS
+	to_fill.initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	to_fill.air = new
 	to_fill.air.copy_from_turf(to_fill)
 
